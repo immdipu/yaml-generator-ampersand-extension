@@ -2,6 +2,10 @@
   "name": "yaml-generator-ampersand",
   "displayName": "yaml-generator-ampersand",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/immdipu/yaml-generator-ampersand-extension"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.95.0"
