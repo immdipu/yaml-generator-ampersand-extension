@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
       // Resolve script URI here
       const scriptPathOnDisk = vscode.Uri.joinPath(
         extensionUri,
-        "src",
+        "out",
         "dist",
         "assets",
         "index-BWc2-TMw.js"
@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       const StylePathOnDisl = vscode.Uri.joinPath(
         extensionUri,
-        "src",
+        "out",
         "dist",
         "assets",
         "index-dFp5bzoA.css"
