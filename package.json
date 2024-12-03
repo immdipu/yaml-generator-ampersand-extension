@@ -1,6 +1,7 @@
 {
   "name": "yaml-generator-ampersand",
   "displayName": "yaml-generator-ampersand",
+  "publisher": "Ampersand",
   "description": "",
   "repository": {
     "type": "git",
