@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans/DMSansBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueThin.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light weight */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueLight.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular weight */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueRoman.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium weight */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueMedium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black weight */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBlack.otf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light weight (300) */
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMonoLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular weight (400) */
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMonoRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium weight (500) */
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMonoMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold weight (600) */
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMonoSemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold weight (700) */
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SFMono/SFMonoBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata/Inconsolata-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

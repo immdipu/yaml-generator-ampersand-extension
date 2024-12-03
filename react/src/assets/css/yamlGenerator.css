@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --background: #050928;
+  --foreground: #d8d8d8;
+}
+
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Manrope", sans-serif;
+}
+
+.label {
+  @apply text-base font-medium text-neutral-300 mb-[7px];
+}
+
+.input_label {
+  @apply text-[13px] font-medium text-orange-300 h-fit;
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6122e769 #17193a;
+  border-radius: 10px;
+  scrollbar-gutter: stable;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: black;
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background-color: black;
+}
