@@ -9,3 +9,8 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+react
+node_modules
+vite.config.js
+vite.config.ts
+vite.config.js.map
