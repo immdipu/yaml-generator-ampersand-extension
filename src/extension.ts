@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.ViewColumn.One, // Show in the first column
         {
           enableScripts: true,
-          localResourceRoots: [vscode.Uri.joinPath(extensionUri, "src")],
+          //   localResourceRoots: [vscode.Uri.joinPath(extensionUri, "src")],
         }
       );
 
