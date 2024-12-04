@@ -32,8 +32,8 @@
     "lint": "eslint src",
     "test": "vscode-test",
     "build": "vsce package",
-    "development": "vite",
-    "dev": "cd react && npm run dev"
+    "dev": "cd react && npm run dev",
+    "build:react": "cd react && npm run build"
   },
   "devDependencies": {
     "@types/vscode": "^1.95.0",
