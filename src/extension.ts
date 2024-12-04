@@ -22,17 +22,17 @@ export function activate(context: vscode.ExtensionContext) {
       const scriptPathOnDisk = vscode.Uri.joinPath(
         extensionUri,
         "out",
-        "dist",
+        "react",
         "assets",
-        "index-BWc2-TMw.js"
+        "index.js"
       );
 
       const StylePathOnDisl = vscode.Uri.joinPath(
         extensionUri,
         "out",
-        "dist",
+        "react",
         "assets",
-        "index-dFp5bzoA.css"
+        "index.css"
       );
 
       // Convert to a webview-friendly URI
