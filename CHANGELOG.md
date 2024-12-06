@@ -1,5 +1,15 @@
 ## Changelog
 
+### [1.1.1] - 2024-12-07
+
+#### Updated
+
+- Updated README with more detailed instructions.
+- Minor UI improvements.
+- Updated Display Name.
+
+---
+
 ### [1.1.0] - 2024-12-06
 
 #### Added
