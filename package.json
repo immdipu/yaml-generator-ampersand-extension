@@ -3,11 +3,12 @@
   "displayName": "yaml-generator-ampersand",
   "publisher": "Ampersand",
   "description": "",
+  "icon": "/assets/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/immdipu/yaml-generator-ampersand-extension"
   },
-  "version": "0.0.1",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -17,10 +18,32 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "command": "yaml-generator-ampersand.openInYamlGenerator",
+          "when": "editorLangId == yaml",
+          "group": "navigation"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "yaml-generator-ampersand",
+          "name": "YAML Generator",
+          "icon": "./assets/icon.svg"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "yaml-generator-ampersand.openPreview",
         "title": "Open Preview"
+      },
+      {
+        "command": "yaml-generator-ampersand.openInYamlGenerator",
+        "title": "Open in YAML Generator"
       }
     ]
   },
