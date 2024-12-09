@@ -8,6 +8,7 @@ import "../assets/css/fonts.css";
 import "../assets/css/yamlGenerator.css";
 import { useEffect } from "react";
 import { useYAMLIntegrationLoader } from "../hooks/useYAMLIntegrationLoader";
+import toast from "react-hot-toast";
 
 export default function AppComponent({
   providers,
@@ -37,6 +38,7 @@ export default function AppComponent({
         try {
           LoadIntegration(yaml);
         } catch (error) {
+          toast.error("Failed to load yaml. Please check the yaml syntax.");
           console.error("Error Loading yaml", error);
         }
       }
