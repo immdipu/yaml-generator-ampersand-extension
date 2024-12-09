@@ -31,6 +31,17 @@ function createWebViewPanel(extensionUri: vscode.Uri, panel: any) {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>YAML Generator</title>
+        <script>
+        const vscode = acquireVsCodeApi();
+        window.addEventListener("message", (event) => {
+          // Handle incoming messages from the extension here
+          const { command, yaml } = event.data;
+          if (command === "updateYaml") {
+            console.log("Received YAML data in React app:", yaml);
+            // You can update your React state or perform other actions here
+          }
+        });
+      </script>
       <script type="module" crossorigin src="${scriptUri.toString()}"></script>
         <link rel="stylesheet" crossorigin href="${styleUri.toString()}">
     </head>
@@ -132,6 +143,7 @@ export function activate(context: vscode.ExtensionContext) {
         });
 
         panel.webview.postMessage({
+          command: "updateYaml",
           yaml: fileContent,
         });
 

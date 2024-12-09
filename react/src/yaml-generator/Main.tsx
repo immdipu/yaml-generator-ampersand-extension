@@ -6,6 +6,8 @@ import { useStore } from "./store/store";
 import AddIntegrationButton from "./AddIntegrationButton";
 import "../assets/css/fonts.css";
 import "../assets/css/yamlGenerator.css";
+import { useEffect } from "react";
+import { useYAMLIntegrationLoader } from "../hooks/useYAMLIntegrationLoader";
 
 export default function AppComponent({
   providers,
@@ -15,6 +17,7 @@ export default function AppComponent({
   const { integrations, updateIntegration, selectedIntegrationId } = useStore(
     (state) => state
   );
+  const { LoadIntegration } = useYAMLIntegrationLoader();
 
   const selectedIntegration = selectedIntegrationId
     ? integrations.find((i) => i.id === selectedIntegrationId)
@@ -25,6 +28,25 @@ export default function AppComponent({
       updateIntegration(selectedIntegrationId, { [field]: value });
     }
   };
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handleMessage = (event: any) => {
+      const { command, yaml } = event.data;
+      if (command === "updateYaml") {
+        try {
+          LoadIntegration(yaml);
+        } catch (error) {
+          console.error("Error Loading yaml", error);
+        }
+      }
+    };
+    window.addEventListener("message", handleMessage);
+
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
+  }, []);
 
   return (
     <div className="flex h-screen py-12 px-10 overflow-hidden">
