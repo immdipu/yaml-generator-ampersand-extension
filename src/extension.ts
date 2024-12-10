@@ -140,6 +140,19 @@ export function activate(context: vscode.ExtensionContext) {
               yaml: fileContent,
             });
           }
+
+          if (message.command === "updateYaml") {
+            const yaml = message.yaml;
+            try {
+              fs.writeFileSync(filePath, yaml, "utf-8");
+              vscode.window.showInformationMessage(
+                "YAML file updated successfully!"
+              );
+            } catch (error) {
+              console.error("Error writing file:", error);
+              vscode.window.showErrorMessage("Error updating file");
+            }
+          }
         });
 
         panel.webview.postMessage({

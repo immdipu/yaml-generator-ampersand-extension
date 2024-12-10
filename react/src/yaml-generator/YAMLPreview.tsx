@@ -29,6 +29,13 @@ export default function YamlPreview() {
     }, 3000);
   };
 
+  const saveYAML = () => {
+    vscode.postMessage({
+      command: "updateYaml",
+      yaml,
+    });
+  };
+
   return (
     <div className="">
       <div className="flex justify-between ">
@@ -69,12 +76,12 @@ export default function YamlPreview() {
           <Button
             variant="outline"
             size="icon"
-            onClick={downloadYAML}
+            onClick={saveYAML}
             title="Save YAML"
             className="border-[#4d4486] hover:bg-[#050928]"
           >
             <Save className="h-4 w-4 text-neutral-400" />
-            <span className="sr-only">Download YAML</span>
+            <span className="sr-only">Save YAML</span>
           </Button>
         </div>
       </div>
