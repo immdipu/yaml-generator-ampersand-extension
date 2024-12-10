@@ -4,16 +4,14 @@ import { useStore } from "./store/store";
 import Prism from "prismjs";
 import "prismjs/components/prism-yaml";
 import "../assets/css/prism.css";
-import { Copy, Download, Check, ArrowUp } from "lucide-react";
+import { Copy, Check, Save } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import { useYAMLIntegrationLoader } from "../hooks/useYAMLIntegrationLoader";
 
 export default function YamlPreview() {
   const { integrations } = useStore((state) => state);
   const [yaml, setYAML] = useState<string>("");
   const [showCheck, setShowCheck] = useState<boolean>(false);
-  const { LoadIntegration } = useYAMLIntegrationLoader();
 
   useEffect(() => {
     Prism.highlightAll();
@@ -31,56 +29,11 @@ export default function YamlPreview() {
     }, 3000);
   };
 
-  const downloadYAML = () => {
-    const blob = new Blob([yaml], { type: "text/yaml" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "amp.yaml";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
-
-  const uploadYAML = () => {
-    const fileInput = document.createElement("input");
-    fileInput.type = "file";
-    fileInput.accept = ".yaml";
-    fileInput.onchange = (e) => {
-      const file = (e.target as HTMLInputElement).files?.[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const yaml = e.target?.result as string;
-          try {
-            LoadIntegration(yaml);
-          } catch (e) {
-            console.error(e);
-          }
-        };
-        reader.readAsText(file);
-      }
-    };
-    fileInput.click();
-  };
-
   return (
     <div className="">
       <div className="flex justify-between ">
         <h2 className="text-2xl font-bold mb-2">YAML Preview</h2>
         <div className="flex gap-5 pr-5">
-          <Button
-            variant="outline"
-            size="icon"
-            title="Import YAML"
-            onClick={uploadYAML}
-            className="border-[#4d4486] hover:bg-[#050928]"
-          >
-            <ArrowUp className="h-4 w-4 text-neutral-400" />
-            <span className="sr-only">Download YAML</span>
-          </Button>
-
           <Button
             variant="outline"
             className="border-[#4d4486] hover:bg-[#050928] relative"
@@ -117,10 +70,10 @@ export default function YamlPreview() {
             variant="outline"
             size="icon"
             onClick={downloadYAML}
-            title="Download YAML"
+            title="Save YAML"
             className="border-[#4d4486] hover:bg-[#050928]"
           >
-            <Download className="h-4 w-4 text-neutral-400" />
+            <Save className="h-4 w-4 text-neutral-400" />
             <span className="sr-only">Download YAML</span>
           </Button>
         </div>
