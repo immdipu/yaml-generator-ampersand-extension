@@ -1,5 +1,14 @@
 ## Changelog
 
+### [1.2.1] - 2024-12-10
+
+#### Updated
+
+- Updated README with more detailed instructions.
+- Updated Extension description.
+
+---
+
 ### [1.2.0] - 2024-12-10
 
 #### Added
