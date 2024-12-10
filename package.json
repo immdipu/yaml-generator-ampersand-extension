@@ -2,7 +2,7 @@
   "name": "yaml-generator-ampersand",
   "displayName": "YAML Generator Ampersand",
   "publisher": "Ampersand",
-  "description": "",
+  "description": "YAML Generator Ampersand is a Visual Studio Code extension that helps you to generate and edit Ampersand integration YAML files. It provides a user-friendly interface to create and edit YAML files for Ampersand integration.",
   "icon": "/assets/icon.png",
   "repository": {
     "type": "git",
