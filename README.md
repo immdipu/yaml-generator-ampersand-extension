@@ -32,7 +32,7 @@ The **YAML Generator for Ampersand** is a powerful tool designed to streamline t
 ### Edit Existing YAML
 
 1. Open Ampersand YAML files in VS Code.
-2. Right-click on the file and select **Open in YAML Generator**.
+2. Right-click on the file and select **Open in YAML Generator**. ( Note: YAML file must follow the Ampersand schema for editing in the generator.)
 3. Make your changes and Click **Save**.
 4. The updated YAML content will be saved back to the original file.
 5. Click **Close** to exit the YAML Generator.
