@@ -5,6 +5,7 @@ The **YAML Generator for Ampersand** is a powerful tool designed to streamline t
 ## Features
 
 - **Generate YAML Files**: Create YAML files with ease, tailored for Ampersand integrations.
+- **Edit Existing YAML**: Open and edit existing YAML files directly in the generator.
 - **Preview YAML**: Enjoy syntax-highlighted previews to ensure accuracy.
 - **Copy to Clipboard**: Quickly copy generated YAML content with a single click.
 - **Context Menu Support**: Right-click on any open YAML file to edit it directly in the YAML Generator.
@@ -28,7 +29,10 @@ The **YAML Generator for Ampersand** is a powerful tool designed to streamline t
 2. Use the intuitive interface to create or edit your YAML configuration.
 3. Preview and copy the YAML to use in your projects.
 
-## Requirements
+### Edit Existing YAML
 
-- **Visual Studio Code** version `^1.xx` or higher.
-- Works best with projects using the Ampersand platform.
+1. Open Ampersand YAML files in VS Code.
+2. Right-click on the file and select **Open in YAML Generator**.
+3. Make your changes and Click **Save**.
+4. The updated YAML content will be saved back to the original file.
+5. Click **Close** to exit the YAML Generator.

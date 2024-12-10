@@ -153,6 +153,10 @@ export function activate(context: vscode.ExtensionContext) {
               vscode.window.showErrorMessage("Error updating file");
             }
           }
+
+          if (message.command === "closeExtension") {
+            panel.dispose();
+          }
         });
 
         panel.webview.postMessage({

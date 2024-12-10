@@ -1,5 +1,19 @@
 ## Changelog
 
+### [1.2.0] - 2024-12-10
+
+#### Added
+
+- Added Support to Load YAML files from the local file system.
+- Added Support to Save YAML files to the local file system.
+- Close button to close the YAML editor.
+
+### Fixed
+
+- Minor UI improvements.
+
+---
+
 ### [1.1.1] - 2024-12-07
 
 #### Updated

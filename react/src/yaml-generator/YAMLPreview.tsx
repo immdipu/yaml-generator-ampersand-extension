@@ -4,7 +4,7 @@ import { useStore } from "./store/store";
 import Prism from "prismjs";
 import "prismjs/components/prism-yaml";
 import "../assets/css/prism.css";
-import { Copy, Check, Save } from "lucide-react";
+import { Copy, Check, Save, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -36,11 +36,27 @@ export default function YamlPreview() {
     });
   };
 
+  const CloseExtension = () => {
+    vscode.postMessage({
+      command: "closeExtension",
+    });
+  };
+
   return (
     <div className="">
       <div className="flex justify-between ">
         <h2 className="text-2xl font-bold mb-2">YAML Preview</h2>
         <div className="flex gap-5 pr-5">
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={saveYAML}
+            title="Save YAML"
+            className="border-[#4d4486] hover:bg-[#050928]"
+          >
+            <Save className="h-4 w-4 text-neutral-400" />
+            <span className="sr-only">Save YAML</span>
+          </Button>
           <Button
             variant="outline"
             className="border-[#4d4486] hover:bg-[#050928] relative"
@@ -76,11 +92,11 @@ export default function YamlPreview() {
           <Button
             variant="outline"
             size="icon"
-            onClick={saveYAML}
+            onClick={CloseExtension}
             title="Save YAML"
             className="border-[#4d4486] hover:bg-[#050928]"
           >
-            <Save className="h-4 w-4 text-neutral-400" />
+            <X className="h-4 w-4 text-neutral-400" />
             <span className="sr-only">Save YAML</span>
           </Button>
         </div>
